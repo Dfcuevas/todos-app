@@ -1,0 +1,18 @@
+import CompleteIcon from "../TodoIcon/CompleteIcon";
+import DeleteIcon from "../TodoIcon/DeleteIcon";
+import "./TodoItem.css";
+
+function TodoItem({ text, completed, onComplete, onDelete }) {
+  return (
+    <li className="TodoItem">
+      <CompleteIcon completed={completed} onComplete={onComplete} />
+
+      <p className={`TodoItem-p ${completed && "TododItem-p--complete"}`}>
+        {text}
+      </p>
+      <DeleteIcon onDelete={onDelete} />
+    </li>
+  );
+}
+
+export { TodoItem };

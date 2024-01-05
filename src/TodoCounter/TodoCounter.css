@@ -1,0 +1,16 @@
+.title-todo {
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  padding: 48px;
+  font-size: 24px;
+}
+
+.title-todo span {
+  font-weight: bold;
+}
+
+.congratz {
+  text-align: center;
+  color: #5cb85c;
+}
